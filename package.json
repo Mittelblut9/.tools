@@ -1,0 +1,29 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "code:eslint": "eslint --ext .ts,.vue ../src --c ./eslint/.eslintrc.cjs --cache --cache-location ./eslint/.cache/",
+    "code:lint": "npm run code:eslint && npm run scss:lint",
+    "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix",
+    "scss:lint": "stylelint ../src/assets/scss --config ./stylelint/stylelintrc.json"
+  },
+  "author": "Mittelblut9",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.24.7",
+    "@html-eslint/parser": "^0.25.0",
+    "@nuxt/eslint-config": "^0.3.13",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "^6.3.2"
+  }
+}
