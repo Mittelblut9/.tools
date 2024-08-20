@@ -108,7 +108,7 @@ module.exports = {
         'vue/no-multiple-template-root': 0,
         'vue/no-v-html': 0,
         'no-unused-vars': 'off',
-        'ue/no-mutating-props': 0,
+        'vue/no-mutating-props': 0,
     },
     ignorePatterns: [
         'node_modules/**/*',
