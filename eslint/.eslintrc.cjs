@@ -22,9 +22,6 @@ module.exports = {
         requireConfigFile: false,
         ecmaVersion: 'latest',
         sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-        },
     },
     rules: {
         'no-console': ['error', { allow: ['warn', 'error', 'info', 'debug'] }],
@@ -57,6 +54,9 @@ module.exports = {
                 'CONTENT'
             ],
             'alphabetical': false
+        }],
+        'vue/component-tags-order': ['error', {
+            'order': ['template', 'script', 'style']
         }],
         'sort-imports': [
             'error',
@@ -109,6 +109,11 @@ module.exports = {
         'vue/no-v-html': 0,
         'no-unused-vars': 'off',
         'vue/no-mutating-props': 0,
+        'vue/script-indent': ['error', 4, {
+            'baseIndent': 0,
+            'switchCase': 1,
+            'ignores': [],
+        }],
     },
     ignorePatterns: [
         'node_modules/**/*',
