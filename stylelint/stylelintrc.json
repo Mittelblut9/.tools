@@ -7,7 +7,18 @@
         }
     ],
     "rules": {
-        "at-rule-no-unknown": null,
+        "at-rule-no-unknown": [
+            true,
+            {
+              "ignoreAtRules": [
+                "tailwind",
+                "apply",
+                "variants",
+                "responsive",
+                "screen"
+              ]
+            }
+          ],
         "scss/at-rule-no-unknown": true,
         "import-notation": null,
         "at-rule-empty-line-before": null,
@@ -18,5 +29,7 @@
         "declaration-block-single-line-max-declarations": null,
         "scss/load-no-partial-leading-underscore": null
     },
-    "ignoreFiles": ["node_modules/**/*"]
+    "ignoreFiles": ["node_modules/**/*"],
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null
 }
