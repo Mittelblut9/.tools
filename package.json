@@ -4,9 +4,8 @@
   "description": "",
   "scripts": {
     "code:eslint": "eslint --ext .ts,.vue ../src --c ./eslint/.eslintrc.cjs --cache --cache-location ./eslint/.cache/",
-    "code:lint": "npm run code:eslint && npm run scss:lint",
-    "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix",
-    "scss:lint": "stylelint ../src/assets/scss --config ./stylelint/stylelintrc.json"
+    "code:lint": "npm run code:eslint",
+    "code:format": "npm run code:eslint -- --fix"
   },
   "author": "Mittelblut9",
   "license": "ISC",
@@ -20,10 +19,6 @@
     "eslint-plugin-flow": "^2.29.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-typescript": "^0.14.0",
-    "stylelint": "^16.6.1",
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-config-standard-scss": "^13.1.0",
-    "stylelint-scss": "^6.3.2"
+    "eslint-plugin-typescript": "^0.14.0"
   }
 }
