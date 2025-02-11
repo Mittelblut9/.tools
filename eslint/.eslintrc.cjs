@@ -115,6 +115,7 @@ module.exports = {
             'switchCase': 1,
             'ignores': [],
         }],
+        'vue/no-reserved-component-names': 0,
     },
     ignorePatterns: [
         'node_modules/**/*',
