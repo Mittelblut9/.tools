@@ -107,6 +107,7 @@ module.exports = {
         ],
         'vue/no-multiple-template-root': 0,
         'vue/no-v-html': 0,
+        'vue/no-v-text-v-html-on-component': 0,
         'no-unused-vars': 'off',
         'vue/no-mutating-props': 0,
         'vue/script-indent': ['error', 4, {
