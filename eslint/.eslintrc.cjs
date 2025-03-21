@@ -115,6 +115,8 @@ module.exports = {
             'switchCase': 1,
             'ignores': [],
         }],
+        'vue/multi-word-component-names': 0,
+        'vue/no-v-model-argument': 0,
     },
     ignorePatterns: [
         'node_modules/**/*',
